@@ -1,5 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 body {
     background: #11151C;
     color: #F2F2F2;
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+
+
+/* HOME PAGE */
+
+.home {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.departure-board {
+    font-family: "Courier New", monospace;
+    font-size: 28px;
+    text-align: left;
+    margin-top: 60px;
+    line-height: 1.8;
+}
+
+.departure-board p {
+    margin: 0;
+}
+
+.navigation {
+    margin-top: 60px;
+    color: #F2F2F2;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.navigation:hover {
+    text-decoration: underline;
+}
+
+
+/* MAP PAGE */
+
+.screen {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.map {
+    position: relative;
+    width: 700px;
+    height: 450px;
+    margin-top: 60px;
+}
+
+.station {
+    position: absolute;
+    z-index: 1;
+    color: #F2F2F2;
+    background: #11151C;
+    padding: 8px 12px;
+    text-decoration: none;
+    font-family: "Courier New", monospace;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.station:hover {
+    text-decoration: underline;
+}
+
+.line {
+    position: absolute;
+    background: #F2F2F2;
+    z-index: 0;
+}
+
+.vertical {
+    width: 2px;
+    height: 100%;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+.horizontal {
+    height: 2px;
+    width: 80%;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.central {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.old-town {
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+}
+
+.west {
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.east {
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.industrial {
+    left: 50%;
+    bottom: 15%;
+    transform: translateX(-50%);
+}
+
+.unknown {
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+
+/* NARRATIVE PAGES */
+
+.terminal-screen {
+    min-height: 100vh;
+    padding: 60px;
+    box-sizing: border-box;
+}
+
+.terminal-screen h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.terminal-screen .subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.terminal-screen .narrative {
+    margin-top: 60px;
+    max-width: 700px;
+    font-family: "Courier New", monospace;
+    font-size: 24px;
+    line-height: 1.6;
+}
+
+.terminal-screen .narrative p {
+    margin: 0 0 20px 0;
+}
+
+.terminal-screen .navigation {
+    display: inline-block;
+    margin-top: 40px;
+    font-family: 'Inter', sans-serif;
+}
+
+
+/* IMAGES */
+
+.station-image {
+    display: block;
+    width: 700px;
+    max-width: 100%;
+    height: auto;
+    margin-top: 40px;
 }
